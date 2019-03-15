@@ -229,6 +229,11 @@ address{
     text-align: center;
 }
 
+iframe{
+   width: 400px;
+   height: 312px;
+}
+
 .fa-linkedin , .fa-facebook{
     font-size: 40px;
     color: #000;
@@ -400,7 +405,12 @@ input[type=submit]:hover{
     .tagline{
         font-size: 44px; 
     }
-    
+    .contact-address{
+        flex-wrap: wrap;
+    }
+    .map{
+        margin: 10px 0 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -466,6 +476,18 @@ input[type=submit]:hover{
         font-size: 24px;
     }
 
+    input[type=text], input[type=number], textarea{
+        width: 100%;
+    }
+
+    .contact-address{
+        flex-flow: column;
+    }
+
+    iframe{
+        width: 280px;
+    }
+
     .navigation-bottom ul li a{
         margin: 0 10px;
     }
@@ -478,9 +500,7 @@ input[type=submit]:hover{
     display: block;
 }
 
-#myDropdown{
-    
-}
+
 
 
 
