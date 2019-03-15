@@ -32,53 +32,45 @@
                     </nav>
                 </header>
             </div>
-            <div class="tagline-wrap">
-                <div class="tagline">
-                    Andy motors is actief sinds 1998 
-                    <span>Een gevestigde waarde in Roeselare en omstreken</span>
-
-                </div>
-            </div>
-            <section class="Sub-navigation-wrap">
-                <div class="sub-navigation">
-                    <div class="Motor box">
-                        Motors
-                        <img src="./images/motor.jpg" alt="motors" />
-                    </div>
-                    <div class=" Scooter box">
-                        Scooter
-                        <img  src="./images/scooter.jpg" alt="scooter" />
-                    </div>
-                    <div class=" Brommers box">
-                        Brommers
-                        <img src="./images/brommer.png" alt="brommer" />
-                    </div>
-                </div>
-            </section>
+            
         </div>
         <div class="content">
-            <h1 class="page-title">Welkom bij Andy Motors</h1>
-           <p>Andy motors is actief sinds 1998 en een gevestigde waarde in Roeselare en omstreken.</p>
-           <blockquote>Steeds de nieuwste modellen van 11 topmerken.<br>
-            Steeds een 20-tal TOP occasies in onze toonzaal.
-           </blockquote>
-           
-            <p>  Breng ons een bezoek en laat je verrassen door onze passie voor de motor en techniek.</p>
-            <p>  Andy motors staat voor:</p>
-            <ul>
-                <li>Eerlijke service</li>
-                <li>Uitstekende naverkoop</li> 
-                <li>Grote voorraad wisselstukken</li> 
-                <li>Goede bereikbaarheid op 5 min van E403</li>
-                <li>Een gepassioneerd en professioneel team voor onderhoud en herstellingen.</li>
-            </ul>
-        </div>
-        <div class="badges-wrap">
-            <div class="badges">
-                <p class="item-1">"This is your last chance. After this, there is no turning back."</p>
-                <!-- <p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p> -->
-                <!-- <p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p> -->
+            <h1 class="page-title">Contacteer ons via ons contact formulier</h1>
+            <div class="contact-form">
+                <form action="action_page.php">
+                    <label for="firstName">Voornaam *:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Voornaam">
+                    <label for="lastName">Achternaam *:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Achternaam">
+                    <label for="telephone">Telefoon:</label>
+                    <input type="number" id="telephone" name="telephone" placeholder="Telefoon" />
+                    <label>Adres:</label>
+                    <textarea id="subject" name="subject" placeholder="Adress" style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
+            <div class="contact-address-wrap">
+                <div class="contact-address">
+                    <address>
+                            <h4 class="office-title">Andy Motors</h4>
+                            Ardooisesteenweg 280<br>
+                            8800 Roeselare<br>
+                            BTW : BE 0795 049 810
+                            <p><i class="fas fa-phone"></i>Tel : + 32-0477-93-55-90</p>
+                            <p><i class="fas fa-fax"></i>Fax: + 32-5169-55-92</p>
+                            <div class="social-media">
+                                <a href="https://www.facebook.com/pg/Andymotors.be/photos/?ref=page_internal" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                    </address>
+                    <div class="office-image">
+                        <img src="./images/office.png" alt="Ardooisesteenweg 280" width="300" height="300"/>
+                    </div>
+                    <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.3073247915954!2d3.1498776511666944!3d50.95502195865996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c336114154a9a1%3A0x5242e409962b7a37!2sArdooisesteenweg+280%2C+8800+Roeselare!5e0!3m2!1sen!2sbe!4v1551952055493" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div> 
         </div>
        <div class="footer-wrap">
             <footer>
@@ -99,7 +91,6 @@
             </footer>
         </div>
     </div>
-
 </body>
 <script>
         $(".back-to-top").click(function(){
