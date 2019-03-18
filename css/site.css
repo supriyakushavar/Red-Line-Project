@@ -391,6 +391,29 @@ input[type=submit]:hover{
     grid-area: 1/3/2/4;
 }
 
+.auto-repairs-top , .auto-repairs-last , .auto-repairs-middle{
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .auto-repairs-top , .auto-repairs-last , .auto-repairs-middle{
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+    }
+
+    .auto-repairs-top .description-box-1 , .auto-repairs-last .description-box-1 , .auto-repairs-middle .description-box-1{
+        grid-area: 2/1/3/3;
+    }
+
+    .auto-repairs-top .img-1 , .auto-repairs-last .img-1, .auto-repairs-middle .img-1{
+        grid-area: 1/1/2/2;
+    }
+
+    .auto-repairs-top .img-2 , .auto-repairs-last .img-2, .auto-repairs-middle .img-2{ 
+        grid-area: 1/2/2/3;
+    }
+}
+
 @media only screen and (max-width: 1180px) {
     header{
         padding: 20px 10px 0;
