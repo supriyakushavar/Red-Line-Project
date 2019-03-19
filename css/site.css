@@ -401,6 +401,11 @@ footer{
     display: inline;
 }
 
+
+.fine-print a{
+    color: #a00909;
+}
+
 .fa-arrow-circle-up{
     margin: 20px 0;
     font-size: 30px;
@@ -628,6 +633,8 @@ input[type=submit]:hover{
     .footer-bottom{
         line-height: 1.6;
     }
+
+
     blockquote{
         padding: 10px 0 10px 15px;
     }
