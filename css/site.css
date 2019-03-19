@@ -12,6 +12,38 @@ body{
     font-weight: 400;
 }
 
+#myDiv{
+    display: none;
+}
+
+#loader{
+    border: 20px solid #000;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    z-index: 2;
+    border-top: 20px solid #3498db;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin{
+    0%{ transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+
+
 .top-header-wrap{
     background-image: url(../images/bg-1.jpg);
     background-size: 100% 100%;
@@ -125,6 +157,14 @@ header{
     padding: 0 10px 54px;
 }
 
+.sub-navigation a{
+    text-decoration: none;
+}
+
+.sub-navigation a:hover{
+    text-decoration: underline;
+}
+
 .sub-navigation img{
     display: table;
     width: 280px;
@@ -223,7 +263,7 @@ blockquote{
 }
 
 .carousel-item p{
-    margin: 105px 0 0;
+    margin: 88px 0 0;
     font-size: 25px;
     color: #000;
 }

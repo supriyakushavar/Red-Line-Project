@@ -10,8 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
     <title>Andy Motors</title>
 </head>
-<body>
-    <div class="grid-container">
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <div class="grid-container" id="myDiv">
         <div class="top-header-wrap">
             <div class="header-wrap">
                 <header>
@@ -41,18 +42,18 @@
             </div>
             <section class="Sub-navigation-wrap">
                 <div class="sub-navigation">
-                    <div class="Motor box">
+                    <a class=" Brommers box" href="repair.html#item-1">
+                        Auto
+                        <img src="./images/car-damage-b.jpg" src="" class="" />
+                    </a>
+                    <a class=" Scooter box" href="repair.html#item-2">
+                        Brommer
+                        <img  src="./images/motor-b.jpg" alt="scooter" />
+                    </a>
+                    <a class="Motor box" href="repair.html#item-3">
                         Scooter
                         <img src="./images/scooter-b.jpg" alt="brommer" />
-                    </div>
-                    <div class=" Scooter box">
-                        Brommers
-                        <img  src="./images/motor-b.jpg" alt="scooter" />
-                    </div>
-                    <div class=" Brommers box">
-                            Auto
-                             <img src="./images/car-damage-b.jpg" src="" class="" />
-                    </div>
+                    </a>
                 </div>
             </section>
         </div>
@@ -123,11 +124,17 @@
 
 </body>
 <script>
+        var myvar; 
+        function myFunction() {
+            myvar = setTimeout(showPage,1000);
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        function showPage(){
+            document.getElementById("loader").style.display="none";
+            document.getElementById("myDiv").style.display = "block";
+        }
         $(".back-to-top").click(function(){
             return $("body,html").animate({scrollTop:0},1800)}
         )
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
     </script>
 </html>
